@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="480a387a-2a97-4d2a-b256-dcf22321f222" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/includes/messages.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User_Authentication/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_Authentication/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User_Authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_Authentication/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_Authentication/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/templates/sign_up/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_up/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/messages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +76,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/User_Authentication/settings.py</url>
-          <line>59</line>
+          <line>61</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

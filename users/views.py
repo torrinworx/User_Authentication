@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.models import User
+from django import forms
+
 
 from .forms import register_form
 
@@ -11,15 +14,23 @@ def register_request(request):
     if request.method == "POST":
         form = register_form(request.POST)
 
+
         if form.is_valid():
-            user = form.save()
-            login(request, user)
-            messages.success(request, "Registration successful.")
-            return redirect("/")
+            email = form.cleaned_data.get('email')
+            if User.objects.filter(email=email).exists():
+                messages.error(request, "Email already exists, try logging in to an existing account.")
+
+            else:
+                user = form.save()
+                login(request, user)
+                messages.success(request, "Registration successful.")
+                return redirect("/")
 
         messages.error(request, "Unsuccessful registration. Invalid information.")
+
     else:
         form = register_form()
+
     return render(request, 'users/register.html', {'title': 'Sign Up', 'register_form': form})
 
 def login_request(request):
@@ -42,4 +53,4 @@ def login_request(request):
     form = AuthenticationForm()
     return render(request, 'users/login.html', {'title': 'Login', 'login_form': form})
 
-def logout_request(request):
+# def logout_request(request):
