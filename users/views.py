@@ -1,9 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
-
-
+from django.contrib.auth.decorators import login_required
 
 from .forms import register_form
 
@@ -26,6 +25,7 @@ def register_request(request):
 
     return render(request, 'users/register.html', {'title': 'Sign Up', 'register_form': form})
 
+
 def login_request(request):
     if request.method == "POST":
         form = AuthenticationForm(request, data=request.POST)
@@ -46,4 +46,12 @@ def login_request(request):
     form = AuthenticationForm()
     return render(request, 'users/login.html', {'title': 'Login', 'login_form': form})
 
-# def logout_request(request):
+def logout_request(request):
+    logout(request)
+    messages.info(request, "You have successfully logged out.")
+    return redirect('/')
+
+
+@login_required
+def user_only_page(request):
+    return render(request, 'users/user_only_page.html')
