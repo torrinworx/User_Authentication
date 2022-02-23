@@ -26,5 +26,5 @@ urlpatterns = [
     path('sign-up/', user_views.register_request, name='sign-up'),
     path('login/', user_views.login_request, name='login'),
     path('logout/', user_views.logout_request, name='logout'),
-    path('user-only-page/', user_views.user_only_page, name='user-only')
+    path('user-only-page/', user_views.user_only_page, name='user-only'),
 ]
